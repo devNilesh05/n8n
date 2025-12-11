@@ -1,2 +1,165 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+/* ---------------------------------------------------------
+   FUTURISTIC MINIMALISM — ROOT THEME
+   Tailwind-friendly CSS variables
+---------------------------------------------------------- */
+
+:root {
+  /* -----------------------------
+     COLOR SYSTEM
+  ------------------------------ */
+
+  /* Base background (dark futuristic) */
+  --color-bg: #0D0F14;
+  --color-bg-secondary: #111827;
+  --color-bg-tertiary: #1F2430;
+
+  /* Primary (neon/tech contrast color) */
+  --color-primary: #6366F1;       /* Cyber Indigo */
+  --color-primary-light: #7C7FF7;
+  --color-primary-dark: #4F51C8;
+
+  /* Accent glow */
+  --color-accent: #3B82F6;        /* Electric Blue */
+
+  /* Neutrals */
+  --color-white: #F9FAFB;
+  --color-gray-100: #E5E7EB;
+  --color-gray-300: #9CA3AF;
+  --color-gray-500: #6B7280;
+  --color-gray-700: #374151;
+  --color-gray-900: #111827;
+
+  /* Text Colors */
+  --color-text: #F3F4F6;
+  --color-text-dimmed: #9CA3AF;
+  --color-text-muted: #6B7280;
+
+  /* Borders */
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.12);
+
+  /* -----------------------------
+     TYPOGRAPHY
+  ------------------------------ */
+  --font-sans: 'Inter', 'Manrope', 'Sora', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --text-size-xs: 0.75rem;
+  --text-size-sm: 0.875rem;
+  --text-size-base: 1rem;
+  --text-size-lg: 1.125rem;
+  --text-size-xl: 1.25rem;
+  --text-size-2xl: 1.5rem;
+  --text-size-3xl: 1.875rem;
+  --text-size-4xl: 2.25rem;
+  --text-size-5xl: 3rem;
+
+  /* -----------------------------
+     RADII
+  ------------------------------ */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* -----------------------------
+     SHADOWS
+  ------------------------------ */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.25);
+  --shadow-hard: 0 0 40px rgba(99, 102, 241, 0.25);
+  --shadow-glow: 0 0 12px rgba(59, 130, 246, 0.45);
+
+  /* -----------------------------
+     EFFECTS
+  ------------------------------ */
+
+  --border-thin: 1px solid rgba(255, 255, 255, 0.06);
+
+  /* Glass */
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-blur: blur(12px);
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    #4F51C8 0%,
+    #6366F1 40%,
+    #3B82F6 100%
+  );
+
+  --gradient-subtle: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0.0)
+  );
+}
+
+/* ---------------------------------------------------------
+   DARK MODE OVERRIDES
+---------------------------------------------------------- */
+
+.dark {
+  --color-bg: #0B1121;
+  --color-bg-secondary: #111827;
+  --color-text: #F9FAFB;
+  --color-text-dimmed: #A3A3A3;
+}
+
+
+/* ---------------------------------------------------------
+   GLOBAL HTML + BODY
+---------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  /* Theme base colors */
+  background: var(--color-bg);
+  color: var(--color-text);
+
+  font-family: var(--font-sans);
+  font-size: var(--text-size-base);
+  line-height: 1.6;
+
+  /* Create the futuristic UI feel */
+  letter-spacing: 0.01em;
+  text-rendering: optimizeLegibility;
+
+  /* Movement smoothness */
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+
+  /* Prevent layout shift from scrollbars */
+  overflow-x: hidden;
+}
+
+/* Optional: link styling */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: var(--color-primary-light);
+}
+
+/* Optional: selection */
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
