@@ -1,1 +1,130 @@
-<p>footer works!</p>
+<footer class="w-full mt-12" role="contentinfo" aria-label="Site footer">
+    <div class="rounded-[14px] overflow-hidden" style="box-shadow: 0 48px 60px rgba(2,6,23,0.55);">
+
+        <!-- glassy panel -->
+        <div class="relative px-6 md:px-12 py-10 md:py-14" style="background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+                 border-top:1px solid rgba(255,255,255,0.03);
+                 border-bottom:1px solid rgba(255,255,255,0.02);
+                 backdrop-filter: blur(6px);">
+
+            <!-- grid main -->
+            <div class="mx-auto max-w-[1100px]">
+                <div class="grid gap-8 md:grid-cols-[320px_1fr_220px]">
+
+                    <!-- LEFT: brand / description / socials -->
+                    <div class="flex flex-col gap-4">
+                        <a class="flex items-center gap-3" href="/" aria-label="Home">
+                            <section>
+                                <img width="100" class="logo" src="assets/logo/n8n_pink+white_logo.svg" alt="">
+                            </section>
+                        </a>
+                        <p class="text-sm max-w-[360px]" style="color:var(--color-text-dimmed)">
+                            Skip the search — land dream releases with verified content, secure downloads and smooth
+                            playback.
+                        </p>
+
+                        <div class="flex items-center gap-3 mt-1" aria-label="Social links">
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)] text-(--color-text) transition-transform duration-150 ease-in-out hover:-translate-y-1 focus:outline-none"
+                                href="#" aria-label="Facebook">
+                                <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            </a>
+
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)] text-(--color-text) transition-transform duration-150 ease-in-out hover:-translate-y-1 focus:outline-none"
+                                href="#" aria-label="Twitter">
+                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                            </a>
+
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)] text-(--color-text) transition-transform duration-150 ease-in-out hover:-translate-y-1 focus:outline-none"
+                                href="#" aria-label="Instagram">
+                                <i class="fab fa-instagram" aria-hidden="true"></i>
+                            </a>
+
+                            <a class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)] text-(--color-text) transition-transform duration-150 ease-in-out hover:-translate-y-1 focus:outline-none"
+                                href="#" aria-label="GitHub">
+                                <i class="fab fa-github" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- MIDDLE: nav columns -->
+                    <div class="grid grid-cols-3 gap-6">
+                        <div>
+                            <h4 class="text-sm font-semibold" style="color:var(--color-text)">Products</h4>
+                            <ul class="mt-3 space-y-2 text-sm">
+                                <li><a class="text-(--color-text-dimmed) hover:text-(--color-text) transition ease-in-out"
+                                        href="#">For Individual</a></li>
+                                <li><a class="text-(--color-text-dimmed) hover:text-(--color-text) transition ease-in-out"
+                                        href="#">For Teams</a></li>
+                                <li><a class="text-(--color-text-dimmed) hover:text-(--color-text) transition ease-in-out"
+                                        href="#">Pricing</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-sm font-semibold" style="color:var(--color-text)">About</h4>
+                            <ul class="mt-3 space-y-2 text-sm">
+                                <li><a class="text-(--color-text-dimmed) hover:text-(--color-text) transition ease-in-out"
+                                        href="#">Careers</a></li>
+                                <li><a class="text-(--color-text-dimmed) hover:text-(--color-text) transition ease-in-out"
+                                        href="#">Terms</a></li>
+                                <li><a class="text-(--color-text-dimmed) hover:text-(--color-text) transition ease-in-out"
+                                        href="#">Privacy</a></li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="text-sm font-semibold" style="color:var(--color-text)">Resources</h4>
+                            <ul class="mt-3 space-y-2 text-sm">
+                                <li><a class="text-(--color-text-dimmed) hover:text-(--color-text) transition ease-in-out"
+                                        href="#">Blog</a></li>
+                                <li><a class="text-(--color-text-dimmed) hover:text-(--color-text) transition ease-in-out"
+                                        href="#">Docs</a></li>
+                                <li><a class="text-(--color-text-dimmed) hover:text-(--color-text) transition ease-in-out"
+                                        href="#">Help & Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: downloads + small copy -->
+                    <div class="flex flex-col justify-between">
+                        <div>
+                            <h4 class="text-sm font-semibold" style="color:var(--color-text)">Downloads</h4>
+                            <div class="mt-3 flex flex-col gap-3">
+                                <a class="inline-flex items-center gap-3 px-3 py-2 rounded-md bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)] text-(--color-text) font-semibold transition-transform duration-150 hover:-translate-y-1 focus:outline-none"
+                                    href="#">
+                                    <i class="fa fa-download w-4" aria-hidden="true"></i>
+                                    <span>Downloads</span>
+                                </a>
+
+                                <a class="inline-flex items-center gap-3 px-3 py-2 rounded-md bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)] text-(--color-text) font-semibold transition-transform duration-150 hover:-translate-y-1 focus:outline-none"
+                                    href="#">
+                                    <i class="fa fa-file-audio w-4" aria-hidden="true"></i>
+                                    <span>Noises</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="mt-6 text-sm" style="color:var(--color-text-dimmed)">© n8n 2025</div>
+                    </div>
+                </div>
+
+                <!-- bottom legal row -->
+                <div class="mt-6 border-t pt-6" style="border-color: rgba(255,255,255,0.03);">
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-3">
+                        <div class="text-sm" style="color:var(--color-text-dimmed)">© 2025 n8n — All rights reserved
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <a class="text-sm text-(--color-text-dimmed) hover:text-(--color-text) transition"
+                                href="#">Terms</a>
+                            <a class="text-sm text-(--color-text-dimmed) hover:text-(--color-text) transition"
+                                href="#">Privacy</a>
+                            <a class="text-sm text-(--color-text-dimmed) hover:text-(--color-text) transition"
+                                href="#">Impressum</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- max width -->
+        </div> <!-- panel glass -->
+    </div> <!-- rounded + shadow -->
+</footer>
