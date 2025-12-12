@@ -1,0 +1,38 @@
+card.component.css
+.shimmer {
+  position: absolute;
+  left: -50%;
+  top: 0;
+  height: 100%;
+  width: 150%;
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,0.10) 40%,
+    rgba(255,255,255,0.06) 50%,
+    rgba(255,255,255,0.10) 60%,
+    rgba(255,255,255,0) 100%
+  );
+  transform: translateX(-100%);
+  animation: shimmer 2.2s linear infinite;
+  mix-blend-mode: screen;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-6px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.text-slate-700 { color: rgba(15, 23, 42, 0.85); }

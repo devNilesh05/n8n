@@ -1,0 +1,22 @@
+<!-- card.component.html -->
+<div
+  (click)="onHostClick()"
+  class="bg-white text-black h-min p-2 rounded-2xl mx-auto font-semibold font-sans
+         shadow-lg border border-white/8 overflow-hidden relative cursor-pointer
+         transform transition-all duration-300 hover:shadow-2xl "
+  [ngClass]="extraClass"
+>
+  <!-- shimmer overlay -->
+  <span class="absolute inset-0 pointer-events-none shimmer opacity-60"></span>
+
+  <!-- decorative floating accent -->
+  <span class="absolute -top-4 -right-6 w-28 h-28 rounded-full blur-3xl opacity-20
+               bg-gradient-to-tr from-purple-400 to-cyan-300 animate-float"></span>
+
+  <h2 class="ml-1 text-lg leading-tight">{{ title }}</h2>
+
+  <p class="flex items-center gap-2 mt-1 text-sm">
+    <ng-content></ng-content>
+    <span class="text-slate-700">{{ description }}</span>
+  </p>
+</div>
