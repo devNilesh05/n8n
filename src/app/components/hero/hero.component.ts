@@ -19,6 +19,7 @@ async ngAfterViewInit() {
     // video.play().catch(err => console.log('autoplay blocked',err))
     const t2 = gsap.timeline()
     t2.from('.leftsection',{
+      delay:2,
       opacity:0,
       x:-50,
       duration:1,
